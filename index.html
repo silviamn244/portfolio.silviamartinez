@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio profesional de Silvia Martínez Fernández, agente digitalizador especializada en IA, automatización y transformación digital.">
+  <title>Silvia Martínez Fernández | Portfolio IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .avatar-video-wrapper {
+      margin: 1rem 0 1.25rem;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+    }
+
+    .avatar-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .projects-grid {
+      align-items: start;
+    }
+
+    .project-card.avatar-card .avatar-video-wrapper {
+      aspect-ratio: unset;
+      height: 100%;
+      min-height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="neuralCanvas"></canvas>
+  <header class="navbar">
+    <a class="logo" href="#inicio">SMF</a>
+    <nav class="nav-links">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#competencias">Competencias</a>
+      <a href="#formación">Formación</a>
+      <a href="#proyectos">Proyectos creados</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <div class="hero-profile-badge fade-in">
+            <img class="hero-profile-image" src="assets/images/foto silvia.jpg"
+              alt="Foto profesional de Silvia Martinez Fernandez">
+            <div class="hero-profile-meta">
+              <span class="hero-profile-role">Silvia Martinez Fernández</span>
+              <span class="hero-profile-focus">IA aplicada, automatización y organización digital</span>
+            </div>
+          </div>
+          <p class="eyebrow hero-subtitle">Portfolio profesional</p>
+          <h1 class="hero-title">Silvia Martínez Fernández</h1>
+          <p class="hero-lead fade-in">
+            Agente digitalizador especializada en inteligencia artificial, automatización
+            y mejora de procesos para negocios que quieren avanzar con claridad.
+          </p>
+          <div class="hero-actions fade-in">
+            <a class="btn btn-primary" href="#contacto">Contactar</a>
+            <a class="btn btn-secondary" href="assets/images/cv-silvia-martinez.jpg" target="_blank"
+              rel="noopener noreferrer">Ver CV</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel fade-in">
+          <span class="panel-kicker">Enfoque</span>
+          <h2>Digitalización con impacto real</h2>
+          <p>
+            Transformo necesidades operativas en soluciones practicas: automatización,
+            organización digital, soporte administrativo y adopción de herramientas IA.
+          </p>
+          <ul class="hero-points">
+            <li>Automatización de tareas repetitivas</li>
+            <li>Optimización de flujos administrativos</li>
+            <li>Apoyo a equipos en procesos digitales</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section intro" id="perfil">
+      <div class="section-heading text-block">
+        <p class="eyebrow">Perfil</p>
+        <h2>Una presencia profesional preparada para el entorno digital actual</h2>
+      </div>
+      <div class="intro-grid">
+        <article class="info-card service">
+          <span class="card-index">01</span>
+          <h3>Perfil profesional</h3>
+          <p>
+            Profesional orientada a la transformación digital, con capacidad para combinar
+            organización, comunicación y tecnologia en proyectos con foco en eficiencia.
+          </p>
+        </article>
+        <article class="info-card service">
+          <span class="card-index">02</span>
+          <h3>Valor diferencial</h3>
+          <p>
+            Integración de herramientas digitales e IA para simplificar tareas, mejorar el
+            tiempo de respuesta y aportar una experiencia mas moderna y ordenada.
+          </p>
+        </article>
+        <article class="info-card service">
+          <span class="card-index">03</span>
+          <h3>Objetivo</h3>
+          <p>
+            Impulsar procesos mas agiles y profesionales en empresas, pymes y proyectos que
+            necesiten una evolución digital bien guiada.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="experiencia">
+      <div class="section-heading text-block">
+        <p class="eyebrow">Experiencia laboral</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item fade-in">
+          <span class="timeline-tag">Auxiliar Administrativo</span>
+          <h3>Julio 2024 - Noviembre 2025</h3>
+          <p>
+            Gestión administrativa, archivo y atención al cliente, con soporte administrativo organizado y orientado a
+            resultados.
+          </p>
+        </article>
+        <article class="timeline-item fade-in">
+          <span class="timeline-tag">Ayudante técnico Veterinario. Practicas curriculares</span>
+          <h3>Marzo 2021 - Junio 2021</h3>
+          <p>
+            Resgistro y digitalización de datos tecnicos, trabajo con protocolos estructurados y apoyo en procesos
+            reproductivos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competencias">
+      <div class="section-heading text-block">
+        <p class="eyebrow">Competencias</p>
+        <h2>Habilidades clave para impulsar proyectos modernos</h2>
+      </div>
+      <div class="skills-layout">
+        <article class="skills-panel service">
+          <h3>Competencias tecnicas</h3>
+          <ul class="chip-list">
+            <li>Automatización de procesos</li>
+            <li>Herramientas IA</li>
+            <li>Prompt Engineering</li>
+            <li>Chatbots y agentes de IA</li>
+            <li>Gestión documental</li>
+            <li>Ofimatica avanzada</li>
+            <li>Organización digital</li>
+            <li>Soporte operativo</li>
+            <li>Make</li>
+          </ul>
+        </article>
+        <article class="skills-panel service">
+          <h3>Competencias profesionales</h3>
+          <ul class="chip-list">
+            <li>Comunicación clara</li>
+            <li>Resolución de problemas</li>
+            <li>Planificación</li>
+            <li>Aprendizaje continuo</li>
+            <li>Atención al detalle</li>
+            <li>Orientación a resultados</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education-section" id="formación">
+      <div class="section-heading text-block">
+        <p class="eyebrow">Formación academica</p>
+        <h2>Recorrido formativo con base tecnica y especialización en IA aplicada</h2>
+      </div>
+      <div class="intro-grid">
+        <article class="info-card service">
+          <span class="card-index">01</span>
+          <h3>Programa Superior Universitario en Inteligencia Artificial Aplicada a la Empresa</h3>
+          <p>2026 - En curso</p>
+          <p>Universidad de Nebrija / CEOE Fedeto 27 créditos</p>
+        </article>
+        <article class="info-card service">
+          <span class="card-index">02</span>
+          <h3>Técnico en Ganaderia y Asistencia en Sanidad Animal</h3>
+          <p>FP Grado Superior</p>
+          <p>2019-2021 / IES San Isidro</p>
+        </article>
+      </div>
+    </section>
+    <section class="section education-section" id="cursos">
+  <div class="section-heading text-block">
+    <p class="eyebrow">Cursos y certificaciones</p>
+    <h2>Formación complementaria en herramientas y tecnologias actuales</h2>
+  </div>
+  <div class="intro-grid">
+    <article class="info-card service">
+      <span class="card-index">01</span>
+      <h3>Python</h3>
+      <img
+        src="assets/images/curso1.png"
+        alt="Certificado del curso 1"
+        style="width:100%; border-radius:8px; margin: 0.75rem 0; object-fit:cover;"
+      >
+      <p></p>
+    </article>
+    <article class="info-card service">
+      <span class="card-index">02</span>
+      <h3>Copilot</h3>
+      <img
+        src="assets/images/curso2.png"
+        alt="Certificado del curso 2"
+        style="width:100%; border-radius:8px; margin: 0.75rem 0; object-fit:cover;"
+      >
+      <p></p>
+    </article>
+  </div>
+</section>
+    <section class="section projects-section" id="proyectos">
+      <div class="section-heading text-block">
+        <p class="eyebrow">Proyectos creados</p>
+        <h2>Soluciones de IA aplicadas a atención, soporte y experiencia digital</h2>
+        <p>
+          Una selección de proyectos desarrollados para automatizar consultas,
+          mejorar la atencion al usuario y llevar la inteligencia artificial a
+          contextos reales de negocio.
+        </p>
+      </div>
+      <div class="projects-grid">
+  <div class="project-col-1">
+    <article class="project-card project-card-1 fade-in">
+      <span class="project-tag">Agente de IA</span>
+      <h3>Agente de IA para Gymshark</h3>
+      <p>
+        Desarrolle un agente de inteligencia artificial con ChatGPT para la
+        plataforma de Gymshark, orientado a la atención al cliente y capaz
+        de resolver dudas de usuarios para mejorar la experiencia mediante
+        la automatización de consultas frecuentes.
+      </p>
+      <a class="btn btn-primary project-link"
+        href="https://chatgpt.com/g/g-p-69d8cd34b5548191afcd6ae001e71daf-agente-de-ia-gymshark/project"
+        target="_blank" rel="noopener noreferrer">
+        Ver proyecto
+      </a>
+    </article>
+
+    <article class="project-card project-card-2 fade-in">
+      <span class="project-tag">GPT basico</span>
+      <h3>Atendi, asistente virtual para compras Myprotein</h3>
+      <p>
+        Atendi es un asistente virtual diseñado para atención al cliente en
+        procesos de compra. Ofrece información sobre pedidos, envíos y
+        devoluciones, ademas de soporte general sobre pagos y facturación,
+        con respuestas claras, cercanas y profesionales y derivación a
+        soporte humano cuando es necesario.
+      </p>
+      <a class="btn btn-primary project-link"
+        href="https://chatgpt.com/g/g-p-69e0bd2d9c648191bbdc867a82415f73-gpt-basico/shared/c/69e0bf24-7540-832d-8eba-8ca49fc07246?owner_user_id=user-PojcFwXSdMneOAdBq8osO4xs"
+        target="_blank" rel="noopener noreferrer">
+        Abrir GPT
+      </a>
+    </article>
+
+    <article class="project-card project-card-3 fade-in">
+      <span class="project-tag">Chatbot</span>
+      <h3>Chatbot con Chatbase</h3>
+      <p>
+        Desarrolle un chatbot con Chatbase capaz de responder preguntas
+        basadas en el contenido de una pagina web, facilitando información
+        relevante al usuario y extendiendo su uso a canales como Instagram,
+        WhatsApp u otras plataformas de comunicación, sin depender siempre
+        de atención humana.
+      </p>
+      <span class="project-note">Disponible para demostración y adaptación a distintos canales.</span>
+    </article>
+
+    <article class="project-card fade-in">
+      <span class="project-tag">Chatbot con Python</span>
+      <h3>Chatbot para gimnasio con Python</h3>
+      <p>
+        Desarrollo de un chatbot conversacional con Python desplegado en
+        Hugging Face Spaces, orientado a la atención al cliente en gimnasios.
+        Capaz de resolver dudas frecuentes sobre tarifas, horarios y servicios
+        de forma automatica, mejorando la experiencia del usuario sin necesidad
+        de atencion humana constante.
+      </p>
+      <a class="btn btn-primary project-link"
+        href="https://silviamartinezfernandez-chatbot-gimnasio.hf.space"
+        target="_blank" rel="noopener noreferrer">
+        Probar chatbot
+      </a>
+    </article>
+  </div>
+
+  <div class="project-col-2">
+    <article class="project-card project-card-4 fade-in">
+      <span class="project-tag">Avatar</span>
+      <h3>Avatar digital profesional</h3>
+      <div class="avatar-video-wrapper">
+        <video class="avatar-video" controls muted playsinline preload="metadata">
+          <source src="assets/videos/Silvia - Agente Digitalizadora de IA_1080p (2).mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+      <p>
+        He desarrollado un avatar digital que me representa como agente
+        digitalizador especializada en inteligencia artificial, orientado a
+        presentaciones ante empresas. Este avatar incorpora mi propia voz
+        para ofrecer una experiencia mas cercana, profesional y
+        personalizada.
+      </p>
+      <span class="project-note">Proyecto preparado para presentaciones y entornos corporativos.</span>
+    </article>
+
+    <article class="project-card fade-in">
+      <span class="project-tag">Automatización con Make</span>
+      <h3>Automatización de emails por categorías</h3>
+      <div class="make-zacion-image-wrapper">
+        <img class="make-automatizacion" src="assets/images/Make-Automatizacion.jpg" alt="Automatización de correos con Make">
+      </div>
+      <p>
+        Desarrollo de una automatización con Make que, mediante Inteligencia Artificial, analiza y clasifica 
+        automáticamente los correos electrónicos entrantes en Google Sheets según su temática y nivel de urgencia. 
+        Esto permite priorizar los mensajes más críticos y responder de forma inmediata, con la posibilidad de 
+        incorporar respuestas automáticas para mejorar la experiencia del cliente.
+      </p>
+      <span class="project-note">Proyecto preparado para presentaciones y entornos corporativos.</span>
+    </article>
+  </div>
+</div>
+    </section>
+
+
+    <section class="section cta-section" id="contacto">
+      <div class="section-heading text-block">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Listo para dar el siguiente paso? Escríbeme o encuentrame el Linkedin, estoy disponible para
+          colaboraciones, proyectos y consultas.</h2>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card fade-in">
+          <span class="contact-label">Email</span>
+          <h3>silviamn244gmail.com</h3>
+          <p>Canal directo para consultas, propuestas y colaboraciones profesionales.</p>
+          <a class="btn btn-primary contact-action" href="mailto:silviamn244gmail.com">Enviar email</a>
+        </article>
+        <article class="contact-card fade-in">
+          <span class="contact-label">LinkedIn</span>
+          <h3>www.linkedin.com/in/</h3>
+          <p>Espacio profesional para ampliar información y conectar en entorno laboral.</p>
+          <a class="btn btn-secondary contact-action" href="https://www.linkedin.com/in/" target="_blank"
+            rel="noopener noreferrer">
+            Abrir LinkedIn
+          </a>
+        </article>
+      </div>
+      <div class="contact-form-wrapper fade-in">
+    <h3>Envíame un mensaje</h3>
+    <form action="https://formspree.io/f/mzdoplqp" method="POST" class="contact-form" novalidate>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Déjanos un mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+      <!-- Consentimiento obligatorio para el tratamiento de datos del formulario. -->
+      <div class="form-group privacy-consent">
+        <input type="checkbox" id="aceptacion_privacidad" name="aceptacion_privacidad" required
+          aria-describedby="privacidad-error">
+        <label for="aceptacion_privacidad">
+          He leido y acepto la <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Politica de
+            Privacidad</a>
+        </label>
+        <p class="form-error" id="privacidad-error" role="alert" aria-live="polite" hidden>
+          Debes aceptar la Politica de Privacidad para enviar el mensaje.
+        </p>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+    </form>
+  </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Silvia Martínez Fernández | Portfolio profesional</p>
+    <nav class="footer-links" aria-label="Enlaces legales">
+      <a href="privacidad.html">Política de Privacidad</a>
+      <span aria-hidden="true">·</span>
+      <a href="cookies.html">Política de Cookies</a>
+      <span aria-hidden="true">·</span>
+      <button type="button" class="footer-link-button cookie-manage">Gestionar cookies</button>
+    </nav>
+  </footer>
+
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies" aria-modal="true" hidden>
+    <div class="cookie-banner-content">
+      <p>
+        Este sitio utiliza cookies de terceros (Chatbase) para ofrecer el chat de asistencia.
+        Puedes aceptar su uso o rechazarlo.
+        <a href="cookies.html" target="_blank" rel="noopener noreferrer">Política de Cookies</a>.
+      </p>
+      <div class="cookie-banner-actions">
+        <button id="cookieAccept" class="btn btn-primary" type="button">Aceptar</button>
+        <button id="cookieReject" class="btn btn-secondary" type="button">Rechazar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      const consentKey = "cookieConsent";
+      const banner = document.getElementById("cookieBanner");
+      const acceptButton = document.getElementById("cookieAccept");
+      const rejectButton = document.getElementById("cookieReject");
+      const manageButtons = document.querySelectorAll(".cookie-manage");
+      let chatbaseLoaded = false;
+
+      const openChatWidget = (attempt = 0) => {
+        if (typeof window.chatbase?.open === "function") {
+          window.chatbase.open();
+          return;
+        }
+
+        if (attempt >= 20) {
+          return;
+        }
+
+        window.setTimeout(() => openChatWidget(attempt + 1), 400);
+      };
+
+      const loadChatbase = () => {
+        if (chatbaseLoaded || document.getElementById("CF8d8vSyNNQt-vbkziwOJ")) {
+          chatbaseLoaded = true;
+          openChatWidget();
+          return;
+        }
+
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...args) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "CF8d8vSyNNQt-vbkziwOJ";
+        script.domain = "www.chatbase.co";
+        script.onload = () => {
+          chatbaseLoaded = true;
+          window.setTimeout(() => openChatWidget(), 800);
+        };
+        document.body.appendChild(script);
+      };
+
+      const unloadChatbase = () => {
+        const script = document.getElementById("CF8d8vSyNNQt-vbkziwOJ");
+        if (script) {
+          script.remove();
+        }
+
+        document.querySelectorAll('[id^="chatbase"], iframe[src*="chatbase.co"]').forEach((element) => {
+          element.remove();
+        });
+
+        chatbaseLoaded = false;
+        delete window.chatbase;
+      };
+
+      const hideBanner = () => {
+        banner.hidden = true;
+        banner.style.display = "none";
+      };
+
+      const showBanner = () => {
+        banner.hidden = false;
+        banner.style.display = "flex";
+      };
+
+      if (!banner || !acceptButton || !rejectButton) {
+        return;
+      }
+
+      const consent = localStorage.getItem(consentKey);
+
+      if (consent === "accepted") {
+        hideBanner();
+        loadChatbase();
+      } else if (consent === "rejected") {
+        hideBanner();
+      } else {
+        showBanner();
+      }
+
+      acceptButton.addEventListener("click", () => {
+        localStorage.setItem(consentKey, "accepted");
+        hideBanner();
+        loadChatbase();
+      });
+
+      rejectButton.addEventListener("click", () => {
+        localStorage.setItem(consentKey, "rejected");
+        unloadChatbase();
+        hideBanner();
+      });
+
+      manageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          localStorage.removeItem(consentKey);
+          showBanner();
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
